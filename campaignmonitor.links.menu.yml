@@ -1,0 +1,6 @@
+campaignmonitor.admin_settings:
+  route_name: campaignmonitor.admin_settings
+  title: 'General Campaign Monitor settings.'
+  parent: system.admin_config_services
+
+

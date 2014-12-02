@@ -1,0 +1,73 @@
+campaignmonitor.hello_world:
+  path: 'helloworld'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'hello.'
+    _content: '\Drupal\campaignmonitor\Controller\HelloWorldController::viewHello'
+
+
+campaignmonitor.admin_settings:
+  path: 'admin/config/services/campaignmonitor'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'General Campaign Monitor settings.'
+    _form: '\Drupal\campaignmonitor\Form\CampaignMonitorSettingsForm'
+
+campaignmonitor.admin_lists:
+  path: 'admin/config/services/campaignmonitor/lists'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Lists'
+    _content: '\Drupal\campaignmonitor\Controller\CampaignMonitorListController::viewLists'
+
+campaignmonitor.admin_lists_add:
+  path: 'admin/config/services/campaignmonitor/lists/add'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Add List'
+    _form: '\Drupal\campaignmonitor\Form\CampaignMonitorAddListForm'
+
+campaignmonitor.admin_lists_edit:
+  path: 'admin/config/services/campaignmonitor/lists/{list}/edit'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Edit List'
+    _form: '\Drupal\campaignmonitor\Form\CampaignMonitorEditListForm'
+
+campaignmonitor.admin_lists_delete:
+  path: 'admin/config/services/campaignmonitor/lists/{list}/delete'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Delete List'
+    _form: '\Drupal\campaignmonitor\Form\CampaignMonitorDeleteListForm'
+
+campaignmonitor.admin_lists_enable:
+  path: 'admin/config/services/campaignmonitor/lists/{list}/enable'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Enable List'
+    _content: '\Drupal\campaignmonitor\Controller\CampaignMonitorListController::enableList'
+
+campaignmonitor.admin_lists_disable:
+  path: 'admin/config/services/campaignmonitor/lists/{list}/disable'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Disable List'
+    _content: '\Drupal\campaignmonitor\Controller\CampaignMonitorListController::disableList'
+
+
+campaignmonitor.admin_stats:
+  path: 'admin/config/services/campaignmonitor/stats'
+  requirements:
+    _permission: 'administer campaignmonitor'
+  defaults:
+    _title: 'Statistics'
+    _content: '\Drupal\campaignmonitor\Controller\CampaignMonitorStatsController::viewStats'

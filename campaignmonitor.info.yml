@@ -1,0 +1,7 @@
+name: "Campaign Monitor"
+description: "This module uses the Campaign Monitor v3 API to add newsletter functionality to Drupal"
+core: 8.x
+configure: campaignmonitor.admin_settings
+type: module
+package: "Campaign Monitor"
+

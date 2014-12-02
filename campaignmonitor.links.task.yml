@@ -1,0 +1,20 @@
+campaignmonitor.admin_settings:
+  route_name: campaignmonitor.admin_settings
+  title: 'General Campaign Monitor settings.'
+  base_route: campaignmonitor.admin_settings
+
+campaignmonitor.admin_lists:
+  route_name: campaignmonitor.admin_lists
+  title: 'Lists'
+  base_route: campaignmonitor.admin_settings
+
+
+campaignmonitor.admin_lists_edit:
+  route_name: campaignmonitor.admin_lists_edit
+  title: 'Add List'
+  base_route: campaignmonitor.admin_lists
+
+campaignmonitor.admin_stats:
+  route_name: campaignmonitor.admin_stats
+  title: 'Statistics'
+  base_route: campaignmonitor.admin_settings

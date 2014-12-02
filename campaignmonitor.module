@@ -1,0 +1,11 @@
+<?php
+if(file_exists(__DIR__ . '/vendor/autoload.php')) {
+  require_once(__DIR__ . '/vendor/autoload.php');
+}
+
+/**
+ * Created by PhpStorm.
+ * User: btm
+ * Date: 11/20/14
+ * Time: 4:54 PM
+ */ 

@@ -1,0 +1,6 @@
+services:
+
+  campaignmonitor.rest_client:
+    class: Drupal\campaignmonitor\WebService\CampaignMonitorRestClient
+#    tags:
+#          - { name: campaign_monitor_rest_client }

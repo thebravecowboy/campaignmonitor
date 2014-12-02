@@ -1,0 +1,7 @@
+{
+  "name": "campaignmonitor",
+  "type": "drupal-module",
+  "require": {
+    "campaignmonitor/createsend-php": "~4.0"
+  }
+}
